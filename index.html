@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Planets</title>
+    
+</head>
+<body style="background-image: url('resources/universe.jpg');">
+    <header">
+        <nav class="navbar container-flexible navbar-light bg-dark text-light">
+            <div class="container">
+                <div class="navbar-bar d-flex">
+                    <span class="navbar-brand text-light">Projects</span>      
+                    <span class="nav-item" style="margin-top:10px;" >Planets</span>
+                </div>
+            </div>
+
+        </nav>        
+    </header>
+
+    <div class="container" style="background-color: #f5efe6;">
+        <div class="card-deck" id="deckPlanets" style="margin-bottom: 50px;">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Earth</h1>
+                    <div id="earth"></div>
+                    <div>
+                        <p class="earth" id="earthMass"></p>
+                        <p class="earth" id="earthRadius"></p>
+                        <p class="earth" id="earthTilt"></p>
+                        <p class="earth" id="earthVolume"></p>
+                        <p class="earth" id="earthDensity"></p>
+                        <p class="earth" id="earthType"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <select class="form-select form-select-md" name="planets" id="selPlanet">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+            <option value="pluto">Pluto</option>
+        </select>
+        <button class="form-b btn-dark" id="displayPlanet">Display planet</button>
+
+        <!-- <form class="col-md">
+            <div class="form-group">
+                <h3>Create Custom Planet</h3>
+                <label for="massInput" class="">Planet's Mass</label>
+                <input class="form-control" id="massInput" type="number">
+            </div>
+            <div class="form-group">
+                <label for="radiusInput">Planet's Radius</label>
+                <input class="form-control" id="radiusInput" type="number"> 
+            </div>
+            <div class="form-group">
+                <label for="angleInput">Planet's Angle tilt</label>
+                <input class="form-control" id="angleInput" type="number"> 
+            </div>
+            <div class="form-group">
+                <label for="volumeInput">Planet's Volume</label>
+                <input class="form-control" id="volumeInput" type="number"> 
+            </div>
+
+
+        </form> -->
+        <footer class="Footer">
+            <div class="container">
+                <p class="mb-0 font-italic">@Ruben Lara Marin - 2022</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="classes.js"></script>
+    <script src="siteInit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
