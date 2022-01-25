@@ -22,7 +22,7 @@ function getPlanet(apiUrl){
     }); 
     fetchedRequest.then((content)=>{
         let p = newPlanet(content);
-        let data = document.querySelectorAll(`.${p.name}`);
+        let data = document.querySelectorAll(`.${p.name}Data`);
         populateData(p, data);
     });  
 }
@@ -36,11 +36,11 @@ function populateData(planet, data){
     if(planet.name == 'saturn') image.setAttribute('style','width: 200px; height: 100px; margin-top: 50px;');
     else image.setAttribute('style','width: 200px; height: 200px;');
     imageContainer.appendChild(image);
-    data[0].innerHTML = `<b>Mass:</b> ${(planet.mass.massValue*10**planet.mass.massExponent).toExponential(5)} kg`;
+    data[0].innerHTML = `<b>Mass:</b> ${planet.getMass().toExponential(5)} kg`;
     data[1].innerHTML = `<b>Radius:</b> ${planet.radius} km`;
     data[2].innerHTML = `<b>Angle:</b> ${planet.angle}°`;
-    data[3].innerHTML = `<b>Volume:</b> ${(planet.volume.volValue*10**planet.volume.volExponent).toExponential(5)} km³`;
-    data[4].innerHTML = `<b>Density:</b> ${((planet.mass.massValue*10**planet.mass.massExponent)/((planet.volume.volValue*10**planet.volume.volExponent)*1000)).toExponential(5)} kg/m³`;
+    data[3].innerHTML = `<b>Volume:</b> ${planet.getVolume().toExponential(5)} km³`;
+    data[4].innerHTML = `<b>Density:</b> ${~~planet.getDensity()} kg/m³`;
 }
 function addPlanet(){
     
@@ -57,14 +57,14 @@ function addPlanet(){
     
     let card = `<div class="card-body">
             <h1>${capitalized}</h1>
-            <div id="${selectedPlanet}"></div>
+            <div class="planet" id=${selectedPlanet}></div>
             <div>
-                <p class="${selectedPlanet}"></p>
-                <p class="${selectedPlanet}"></p>
-                <p class="${selectedPlanet}"></p>
-                <p class="${selectedPlanet}"></p>
-                <p class="${selectedPlanet}"></p>
-                <p class="${selectedPlanet}"></p>
+                <p class="${selectedPlanet}Data"></p>
+                <p class="${selectedPlanet}Data"></p>
+                <p class="${selectedPlanet}Data"></p>
+                <p class="${selectedPlanet}Data"></p>
+                <p class="${selectedPlanet}Data"></p>
+                <p class="${selectedPlanet}Data"></p>
             </div>
         </div>`;
     div.innerHTML = card;

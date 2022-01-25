@@ -1,85 +1,13 @@
 .card{
+    margin: 5px 5px !important;
     min-width: 300px;
-    margin-bottom: 15px !important;
 }
-.Footer{
+
+.footer{
     display: block;
     height: auto;
 }
-
-#earth{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#mercury{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#venus{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#mars{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#jupiter{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#saturn{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#uranus{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#neptune{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: transparent;
-}
-#pluto{
+.planet{
     float: left;
     width: 200px;
     height: 200px;
